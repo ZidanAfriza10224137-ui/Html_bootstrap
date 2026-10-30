@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #000000;
+    --primary-hover: #fff8f8;
+    --bg-color: #194e9f;
+    --card-bg: #eeebe3;
+    --text-color: #000000;
+    --text-muted: #435266;
+    --border-color: hsl(0, 11%, 7%);
+    --radius: 16px;
+    --shadow: 0 4px 6px -1px rgba(7, 7, 7, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.custom-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-top: #87ceeb 5px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover, .congrats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.box {
+    background-color: #775cc3;
+    border: 1px solid #eeebe3;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+}
+
+.live-preview {
+    border: 2px dashed #775cc3;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+pre::after {
+    content: "HTML";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.custom-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.custom-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+.congrats-card {
+    background: linear-gradient(135deg, #42869a, #3dcede);
+    color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.congrats-card h2 {
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.congrats-card p {
+    color: #e2e8f0;
+}
